@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <style>
+        p {
+            color: orangered;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @RenderBody();
+    </div>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    
+    @RenderSection("Script",required:false);
+
+</body>
+</html>
