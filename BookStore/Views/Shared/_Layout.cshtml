@@ -22,15 +22,43 @@
     </style>
 
     <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
     <link href="~/css/Style.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
-        @RenderBody();
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #e3f2fd;">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/AboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/ContactUs">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="/book/GetAllBooks">All Books</a>
+                    </li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+        
     </div>
-    <script src="~/lib/jquery/jquery.min.js"></script>
     
-    @RenderSection("Script",required:false);
-
+    <footer class="border-top footer text-muted text-center">
+        <div class="container">
+            Copyright &copy;
+        </div>
+    </footer>
 </body>
+
 </html>

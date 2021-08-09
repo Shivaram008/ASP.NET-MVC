@@ -3,20 +3,27 @@
     Layout = "_Layout";
 }
 
-<div style="background-color:beige" class="container">
-    <h1>Home Controller Index View</h1>
-    <h3>@DateTime.Now.ToString("f")</h3>
+<div class="container">
+    <h1 class="h1">Welcome to My Web Page</h1><br />
+    <p>This is some text in the introduction page.</p>
 </div>
-<hr />
-<div style="background-color:burlywood" class="container-md">
-    <h1>My First Static file execution</h1>
-    <img src="~/Images/logo.png" />
+<div class="container ">
+    <div class="row" >
+        <div class="card" style="width: 15rem; height: contain; margin: 4px 7px 2px 4px;">
+            <img src="~/Images/logo.png" alt="logo" />
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem; height: contain; margin: 4px 7px 2px 4px;">
+            <img src="~/Images/logo.png" alt="logo" />
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
 </div>
-
-@section Script{ 
-<script>
-    $(document).ready(function () {
-        alert("Document is ready");
-    });
-</script>
-}
