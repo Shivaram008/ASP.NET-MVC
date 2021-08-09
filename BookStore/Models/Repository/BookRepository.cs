@@ -22,10 +22,11 @@ namespace BookStore.Models.Repository
         {
             return new List<BookModel>()
             {
-                new BookModel(){id=1,Title="C#",Author="Ram" },
-                new BookModel(){id=2,Title="F#",Author="Siva" },
-                new BookModel(){id=3,Title="ASP",Author="Ram" },
-                new BookModel(){id=4,Title="C#",Author="Prasad" }
+                new BookModel(){id=1,Title="C#",Author="Ram" ,Description="This Book is written by the author RAM and this is the 1st edition."},
+                new BookModel(){id=2,Title="F#",Author="Siva" ,Description="This Book is written by the author Siva and this is the 3rd edition." },
+                new BookModel(){id=3,Title="ASP",Author="Ram" ,Description="This Book is written by the author RAM and this is the 2nd edition."},
+                new BookModel(){id=4,Title="C#",Author="Prasad",Description="This Book is written by the author PRASAD and this is the 6th edition." },
+                new BookModel(){id=5,Title="Python",Author="Raj",Description="This Book is written by the author RAJ and this is the 5th edition." }
             };
         }
     }
